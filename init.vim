@@ -13,7 +13,7 @@ Plug 'https://github.com/junegunn/vim-github-dashboard.git'
 Plug 'jpalardy/vim-slime'
 " Multiple Plug commands can be written in a single line using | separators
 Plug 'SirVer/ultisnips' | Plug 'honza/vim-snippets'
-
+Plug 'myint/indent-finder' 
 " On-demand loading
 Plug 'tpope/vim-fireplace', { 'for': 'clojure' }
 " vim markdown
@@ -46,7 +46,7 @@ let maplocalleader= ","
 let g:languagetool_jar='$HOME/.Tools/LanguageTool-4.1/languagetool-commandline.jar'
 let g:languagetool_lang='en-GB'
 syntax enable
-set background=dark
+set background=light
 let g:solarized_termcolors=256
 colorscheme solarized
 let g:solarized_termtrans = 1
@@ -86,6 +86,7 @@ source ~/.config/nvim/slime.vim
 
 map <C-n> :NERDTreeToggle<CR>
 
+set foldlevelstart=99
 
 let g:syntastic_enable_r_lintr_checker = 1
 let g:syntastic_r_checkers = ["lintr"]
